@@ -1,3 +1,5 @@
 steps:
   - name: 'node'
-    args: ['bash', './test.sh']
+    args: ['bash', './success.sh']
+  - name: 'node'
+    args: ['bash', './fail.sh']
