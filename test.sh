@@ -1,14 +1,14 @@
 #!/bin/bash
 cd "$(dirname "$0")"
 
-/bin/node hello.js --fruit orange &> /dev/null
+node hello.js --fruit orange
 
 if [ $? -ne 0 ]; then
   echo Test failed, success expected
   exit 1
 fi
 
-/bin/node hello.js &> /dev/null
+node hello.js
 
 if [ $? -eq 0 ]; then
   echo Test failed, failure expected
